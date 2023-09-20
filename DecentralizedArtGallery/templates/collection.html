@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitGat</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='images/logo-nobg.png')}}" alt="Logo">
+    </header>
+    <header>
+        <h2 id="welcomeMessage">{{title}}</h2>
+	<br>
+	<p class="addInfo">{{info1}}</p>
+	<p class="addInfo">{{info2}}</p>
+    <br>
+    <div id="userButtons">
+        <button onclick="location.href='/'">Profile</button>
+        <button onclick="location.href='/logout'">Logout</button>
+    </div>
+    </header>
+    <main id="cards">
+        {% for indx, nft_info in info_dict.items() %}
+	{% if clickable %}
+        <div onclick="location.href='/buy/nft/{{indx}}'" class="card">
+            <img src="/static/nft_gallery/{{nft_info[0]}}" alt="Image">
+            <p>{{nft_info[1]}}</p>
+        </div>
+	{% else %}
+	<div class="card">
+            <img src="/static/nft_gallery/{{nft_info[0]}}" alt="Image">
+            <p>{{nft_info[1]}}</p>
+        </div>
+	{% endif %}
+        {% endfor %}
+    </main>
+</body>
+</html>

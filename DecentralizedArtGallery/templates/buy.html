@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitGat Buy</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+</head>
+<body>
+    <header>
+        <img class="logo" src="{{url_for('static', filename='images/logo-nobg.png')}}">
+        <div id="userButtons">
+            <button onclick="location.href='/'">Profile</button>
+            <button onclick="location.href='/logout'">Logout</button>
+        </div>
+        <br>
+    </header>
+    
+    <main id="buy-main">
+        <p id="price">{{price}}</p>
+        <h2 id="top-name">{{name}}</h2>
+
+        <img src="/static/nft_gallery/{{art_path}}" alt="nft_art">
+        <p id="details">{{description}}</p>
+	<a id="buy" href="/action/buy/{{nft_index}}">Add to Collection</a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,170 @@
+* :not(i) {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #282828;
+  color: white;
+}
+
+.logo {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.heading {
+  font-size: 30px;
+  margin-bottom: 10%;
+}
+
+.form-user {
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #190061;
+}
+.form-user input {
+  padding: 8px;
+  border-radius: 5px;
+  width: 90%;
+  outline: 0;
+  border: 0;
+  margin-bottom: 20px;
+}
+.form-user .form-btn {
+  background: #693cf1;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.form-user .form-btn:hover {
+  background: rgb(228, 3, 171);
+}
+
+/* Add your CSS styles here */
+header {
+  text-align: center;
+  color: white;
+}
+header img {
+  width: 300px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li {
+  background-color: #0C0032;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.2s;
+  width: 20%;
+  cursor: pointer;
+}
+
+nav li:hover {
+  background-color: rgb(247, 28, 225);
+}
+
+.card {
+  display: inline-flex;
+  background-color: rgb(37, 0, 61);
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 5px #aaa;
+  transition: box-shadow 0.3s ease-in-out;
+  flex-direction: column;
+  cursor: pointer;
+}
+.card img {
+  width: 180px;
+  height: 180px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px #aaa;
+}
+
+#cards {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+#cards p {
+  margin-top: 20px;
+}
+
+#userButtons button {
+  outline: 0;
+  border: 0;
+  background-color: #693cf1;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+#userButtons button:hover {
+  background: rgb(228, 3, 171);
+}
+
+#buy-main {
+  text-align: center;
+  background-color: #0C0032;
+  grid-template-columns: auto auto;
+  border-radius: 10px;
+  width: 700px;
+  padding: 20px;
+  margin: auto;
+  display: grid;
+}
+#buy-main img {
+  width: 200px;
+  border-radius: 10px;
+}
+#buy-main #price {
+  background-color: #693cf1;
+  border-radius: 5px;
+  font-size: 20px;
+}
+#buy-main #price::before {
+  content: "ETH ";
+}
+#buy-main p, #buy-main h2 {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px;
+  background-color: #693cf1;
+}
+#buy-main a {
+  background-color: #282828;
+  transition: all 0.5s;
+  padding: 20px;
+  cursor: pointer;
+  grid-column-end: span 2;
+  margin-top: 15px;
+}
+#buy-main #details {
+  font-size: 18px;
+}
+#buy-main a:hover {
+  background-color: rgb(228, 3, 171);
+}/*# sourceMappingURL=index.css.map */

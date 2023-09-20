@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitGat Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+</head>
+<body>
+    <header>
+        <img class="logo" src="{{url_for('static', filename='images/logo-nobg.png')}}">
+        <div id="userButtons">
+            <button onclick="location.href='/'">Home</button>
+        </div>
+    </header>    
+    <br>
+    
+    <form id="loginForm" class="form-user" action="/onboard/login" method="post">
+        <div class="heading">Sign in</div>
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <input class="form-btn" type="submit" value="Login">
+    </form>
+</body>
+</html>
